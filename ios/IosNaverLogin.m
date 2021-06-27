@@ -108,7 +108,7 @@ RCT_EXPORT_METHOD(login:(NSDictionary *)key callback:(RCTResponseSenderBlock)cal
 }
 
 RCT_EXPORT_METHOD(logout) {
-    [naverConn resetToken];
+    [naverConn requestDeleteToken];
     naverTokenSend = nil;
 }
 
